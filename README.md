@@ -4,7 +4,7 @@
 
 上传所有文件到服务器上，添加do_num.php和do_tongji.php为监控项或者cron计划任务，每小时执行一次。导入tongji.sql到数据库中并且修改conn.php中的各项配置即可。
 
-    touxiang.php——获取贴吧头像（服务端脚本获取可绕过贴吧的UA检测，此脚本有被DDOS攻击的风险）
+    touxiang.php——获取贴吧头像（服务端脚本获取可绕过贴吧的Referer检测，此脚本有被DDOS攻击的风险，如有需要可修改文件名以及在do_xxx.php文件中对应的require语句）
     index.php——首页展示
     timer.class.php——统计脚本执行时间类文件
     do_num.php——定时fetch发帖量数据并且存入数据库进行统计
